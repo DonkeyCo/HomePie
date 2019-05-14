@@ -2,3 +2,4 @@ requests
 pydub
 simpleaudio
 gTTs
+SpeechRecognition
