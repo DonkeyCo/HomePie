@@ -14,7 +14,10 @@ class Recognition:
         text = ""
         try:
             text = self.r.recognize_wit(audio, self.config["WIT"]["API_KEY"])
-            print(text)
+            if "okay home" in text:
+                print(text)
+            else:
+                print("lol " + text)
         except sr.UnknownValueError:
             print("Wit.ai could not understand audio")
         except sr.RequestError as e:
