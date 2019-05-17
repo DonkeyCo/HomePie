@@ -3,3 +3,4 @@ pydub
 simpleaudio
 gTTs
 SpeechRecognition
+parsel
