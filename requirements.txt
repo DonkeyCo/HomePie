@@ -4,3 +4,4 @@ simpleaudio
 gTTs
 SpeechRecognition
 parsel
+spotipy

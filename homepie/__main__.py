@@ -1,6 +1,7 @@
 import configparser
 import time
 from homepie.mods.sound_mod.recognition import Recognition
+from homepie.mods.music_mod.spotify import Spotify
 
 
 def main():
@@ -10,11 +11,8 @@ def main():
     news_api_key = config["NEWS"]["API_KEY"]
     spotify_client_secret = config["SPOTIFY"]["CLIENT_SECRET"]
 
-    r = Recognition(config)
-    r.listen_background()
-
-    while True:
-        time.sleep(0.1)
+    s = Spotify(config)
+    s.test()
 
 
 def init():
