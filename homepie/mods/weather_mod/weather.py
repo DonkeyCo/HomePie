@@ -85,3 +85,15 @@ def tomorrows_forecast():
     tomorrow = selector.xpath(path_tomorrow)
 
     return tomorrow.get()
+
+
+# currently not working
+def current_weather_state():
+    path_current = """//div[@id="totalcontainer"]/div[@id="leftcontainer"]/div[@id="contentcontainer"]/
+                  div[@id="content"]/div[@id="maincontent"]
+                  /div[@id="pc"]/div[@id="product"]/div[@id="p_city_weather"]
+                  /div[@id="product_display"]/div[1]/div[@id="nowcast-bar-wrapper"]/div[@id="nowcast-content"]
+                  /p[@id="nowcast-second-line"]"""
+    currently = selector.xpath(path_current).get()
+
+    return currently
