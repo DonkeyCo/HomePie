@@ -10,11 +10,7 @@ def main():
     config.read('config.ini')
 
     s = Spotify(config)
-    print("Playing...")
-    s.play_playlist("spotify:playlist:1nudUWVKFvqveeWZdjoyph")
-    time.sleep(15)
-    print("Next track...")
-    s.next_track()
+    s.pause()
 
 
 def init():
